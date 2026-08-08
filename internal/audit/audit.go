@@ -126,7 +126,7 @@ func Run() Report {
 	r.AlreadyInstalled = fileExists(installExe)
 	r.InstallPath = installExe
 	r.Checks = append(r.Checks, Check{
-		ID: "existing", Label: "Existing Slat install", OK: true, Required: false,
+		ID: "existing", Label: "Existing Slate install", OK: true, Required: false,
 		Detail: ternary(r.AlreadyInstalled, "Found at "+installExe+" (repair/reinstall OK)", "Not installed yet"),
 		Action: ternary(r.AlreadyInstalled, "Installer will repair/update", "Fresh install"),
 	})

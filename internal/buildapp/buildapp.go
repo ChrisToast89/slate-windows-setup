@@ -60,7 +60,7 @@ func Build(sourceRoot string, progress ProgressFn) (string, error) {
 	progress("Electron", "Electron runtime ready.", 82)
 
 	// Production build
-	progress("Build", "Building Slat (compile). This may take a few minutes…", 84)
+	progress("Build", "Building Slate (compile). This may take a few minutes…", 84)
 	if err := run(sourceRoot, env, progress, npm, "run", "build"); err != nil {
 		return "", fmt.Errorf("npm run build failed: %w", err)
 	}

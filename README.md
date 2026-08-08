@@ -27,7 +27,43 @@ It does **not** replace Slate, rebrand it, or store API keys. It only automates 
 - App files: `%LOCALAPPDATA%\Programs\Slate`
 - Your projects (never deleted by Setup): `%USERPROFILE%\Documents\Slate`
 
-Optional later: install Claude Code and run `claude auth login` if you want the AI brain features (Slate uses your CLI sign-in, not API keys).
+### AI brain setup (optional last step)
+
+Slate does **not** use API keys. The AI “brain” runs on **your** Claude Code (or Codex) sign-in, or on a **local** model server. Setup never automates browser login for you.
+
+After Slate is installed, the installer’s finish screen shows the same guidance. You can also do it anytime:
+
+**Option A — Claude Code (recommended)**
+
+1. Install [Claude Code](https://claude.com/claude-code) if you do not have it yet:
+   - In Setup (finish screen): **Install Claude Code (optional)**, or
+   - In a terminal: `npm install -g @anthropic-ai/claude-code`
+2. Sign in (opens your browser; you approve):
+   ```text
+   claude auth login
+   ```
+3. Confirm the CLI is available: `claude --version`
+4. Open **Slate** → set **Brain** to **Claude Code** (project settings / Project Bible defaults).
+5. Click the **Brain** pill in the title bar to run a live connectivity test (expects a short **READY**-style reply).
+
+If Claude Code is already installed but not signed in, only steps 2–5 are needed.
+
+**Option B — Codex CLI**
+
+1. Install and sign in to the Codex CLI per OpenAI/Codex docs (`codex login` or your installed CLI’s login flow).
+2. In Slate, set **Brain** to **Codex**.
+3. Use the title-bar Brain pill to test.
+
+**Option C — Local model (offline)**
+
+1. Run any OpenAI-compatible local server (Ollama, LM Studio, vLLM, llama.cpp, etc.) with a model loaded.
+2. In Slate, set **Brain** to **Local model** (and endpoint/model if needed; common ports are auto-detected).
+3. Test with the Brain pill. Nothing is sent off your machine for the local backend.
+
+**Notes**
+
+- Setup may offer **Install Claude Code** after install; it never stores credentials or runs `claude auth login` for you.
+- You can use Slate without a brain for non-AI features; agent-style tools need one of the options above.
 
 ## Who made what
 
