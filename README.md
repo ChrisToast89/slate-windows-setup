@@ -7,7 +7,8 @@ A **helper installer** so Windows users can run **[Slate](https://github.com/was
 
 ## Download the installer
 
-**[SlateSetup for Windows v1.2.0 (zip)](https://github.com/ChrisToast89/slate-windows-setup/releases/download/v1.2.0/SlateSetup-windows-v1.2.0.zip)**  
+**[SlateSetup for Windows v1.2.0 (zip)](https://github.com/ChrisToast89/slate-windows-setup/releases/download/v1.2.0/SlateSetup-windows-v1.2.0.zip)** 
+
 All releases: [github.com/ChrisToast89/slate-windows-setup/releases](https://github.com/ChrisToast89/slate-windows-setup/releases)
 
 ### What this package is for
