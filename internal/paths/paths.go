@@ -6,26 +6,23 @@ import (
 	"strings"
 )
 
-// Pin source to the community Windows-support fork until patches land upstream.
-// App authorship remains Sam Wasserman (wassermanproductions/slate).
-// This Setup tool downloads/builds from ChrisToast89/slate@windows-support.
-const SourceRef = "windows-support"
+// Download and build Sam Wasserman's official Slate from GitHub.
+// This Setup tool does NOT fork or rebrand his app — it only helps Windows users install it.
+// Windows brain.ts CLI fix is applied at install time (see internal/patch).
+const SourceRef = "main"
 
 const (
-	// Fork used for Windows-ready source (includes brain.ts CLI fix).
-	GitHubOwner = "ChrisToast89"
+	// Official Slate application (author: Sam Wasserman).
+	GitHubOwner = "wassermanproductions"
 	GitHubRepo  = "slate"
-	// Official app upstream (credits, releases display).
-	UpstreamOwner = "wassermanproductions"
-	UpstreamRepo  = "slate"
 
 	GitHubZipURL = "https://github.com/" + GitHubOwner + "/" + GitHubRepo + "/archive/refs/heads/" + SourceRef + ".zip"
-	// Commits API for update checks (windows-support tip on the fork).
+	// Update checks track official main + official releases.
 	GitHubCommitsAPI  = "https://api.github.com/repos/" + GitHubOwner + "/" + GitHubRepo + "/commits/" + SourceRef
-	GitHubReleasesAPI = "https://api.github.com/repos/" + UpstreamOwner + "/" + UpstreamRepo + "/releases/latest"
+	GitHubReleasesAPI = "https://api.github.com/repos/" + GitHubOwner + "/" + GitHubRepo + "/releases/latest"
 )
 
-const InstallerVersion = "1.1.2"
+const InstallerVersion = "1.2.0"
 
 func LocalAppData() string {
 	if d := os.Getenv("LOCALAPPDATA"); d != "" {

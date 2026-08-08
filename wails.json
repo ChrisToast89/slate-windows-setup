@@ -7,14 +7,14 @@
   "frontend:dev:watcher": "npm run dev",
   "frontend:dev:serverUrl": "auto",
   "author": {
-    "name": "Community Windows port (Slate by Sam Wasserman)",
+    "name": "Windows Setup helper for Slate (app by Sam Wasserman)",
     "email": ""
   },
   "info": {
-    "companyName": "Community fork tooling — Slate created by Sam Wasserman",
+    "companyName": "Helper only - Slate by Sam Wasserman",
     "productName": "Slate Setup",
-    "productVersion": "1.1.1",
-    "copyright": "Slate © Sam Wasserman (Apache-2.0). This Setup tool is community Windows porting aid, not an official Wasserman release.",
-    "comments": "Community guided Windows installer for Slate"
+    "productVersion": "1.2.0",
+    "copyright": "Slate by Sam Wasserman (Apache-2.0). This Setup tool only helps Windows users install his app.",
+    "comments": "Windows install helper for official Slate"
   }
 }

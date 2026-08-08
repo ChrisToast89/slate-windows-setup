@@ -247,7 +247,7 @@ Remove-Item -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Sla
 New-Item -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Slate' -Force | Out-Null
 Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Slate' -Name 'DisplayName' -Value 'Slate'
 Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Slate' -Name 'DisplayVersion' -Value '0.3.2-win'
-Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Slate' -Name 'Publisher' -Value 'Slate by Sam Wasserman — Windows Setup: community port'
+Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Slate' -Name 'Publisher' -Value 'Slate by Sam Wasserman (Windows Setup helper)'
 Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Slate' -Name 'InstallLocation' -Value %q
 Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Slate' -Name 'DisplayIcon' -Value %q
 Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Slate' -Name 'UninstallString' -Value %q

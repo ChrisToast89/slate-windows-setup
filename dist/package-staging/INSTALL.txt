@@ -15,13 +15,9 @@ YOUR PROJECTS stay in:  Documents\Slate
 PROBLEMS? Open:  %TEMP%\slate-install.log  and run Setup again.
 
 CREDITS
-  Slate app: created by Sam Wasserman
+  Slate (the app): Sam Wasserman
     https://github.com/wassermanproductions/slate
-  This installer: community Windows port / fork tooling (ChrisToast89)
-    https://github.com/ChrisToast89/slate-windows-setup
-    (not authored by Sam Wasserman)
-
-  Windows-ready source used by Setup:
-    https://github.com/ChrisToast89/slate (branch windows-support)
+  This Setup helper: Windows install aid only (not by Sam)
+    Installs HIS software for Windows users
 
 Full details: README.txt

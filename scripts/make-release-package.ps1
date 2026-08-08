@@ -1,7 +1,7 @@
 # Build SlateSetup.exe and produce a user download package (exe + docs + zip).
 # Usage:  powershell -File scripts/make-release-package.ps1
 $ErrorActionPreference = "Stop"
-$ver = "1.1.2"
+$ver = "1.2.0"
 $root = Resolve-Path (Join-Path $PSScriptRoot "..")
 Set-Location $root
 

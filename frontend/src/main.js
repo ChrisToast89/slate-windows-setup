@@ -63,17 +63,17 @@ function render() {
     el('div', { className: 'header' }, [
       el('h1', { text: '◆  Slate Setup' }),
       el('p', {
-        text: 'Install, audit, or update Slate. Your project files are always protected.'
+        text: 'Helper to install Sam Wasserman\'s Slate on Windows. Your project files are always protected.'
       }),
       el('p', { className: 'credit' }, [
-        'Slate app: Sam Wasserman (Apache-2.0). This Setup tool: community Windows port — not by Sam. Projects stay in Documents\\Slate. ',
+        'Slate by Sam Wasserman (Apache-2.0). This Setup program is a Windows install helper only — not by Sam. ',
         el('a', {
           href: '#',
           onClick: (e) => {
             e.preventDefault()
             go()?.OpenExternal('https://github.com/wassermanproductions/slate')
           }
-        }, ['Original project'])
+        }, ['Slate on GitHub'])
       ])
     ])
   )

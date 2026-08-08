@@ -1,36 +1,31 @@
-# Using Slate Setup (for non-technical users)
+# Using Slate Setup (Windows)
 
-1. Double-click **`SlateSetup.exe`**.
-2. On the **Home** screen you will see whether Slate is already installed.
-3. Pick what you need:
+This program installs **Sam Wasserman's Slate** on Windows. It is a helper only.
 
-| Button | What it does |
-|--------|----------------|
-| **Install / Repair** | Installs or repairs the app |
-| **Audit tool** | Read-only check of your PC, install health, and GitHub updates |
-| **Check for updates** | Compares your install to the GitHub repository |
-| **Install update** | Appears only when a newer version is found |
-| **Open my projects folder** | Opens `Documents\Slate` (never modified by Setup) |
+## Install
 
-4. If installing/updating: follow **Check PC → Install** and wait (often 10–20 minutes the first time).
+1. Double-click `SlateSetup.exe`
+2. If Windows blocks it: More info -> Run anyway
+3. Click Install Slate
+4. Wait for Finished (first run often 10-20 minutes with internet)
+5. Open Slate from the Start Menu
 
-## Your projects are protected
+## What stays protected
 
-- Projects live in **`%USERPROFILE%\Documents\Slate`**
-- Setup **only** replaces program files under **`%LOCALAPPDATA%\Programs\Slate`**
-- Updates and uninstall **do not** delete your project JSON or media links
+- Projects: `%USERPROFILE%\Documents\Slate` (never deleted by Setup)
+- App files: `%LOCALAPPDATA%\Programs\Slate`
 
-## After install
+## Audit / updates
 
-- Start Menu → **Slate**
-- Uninstall: **Settings → Apps → Slate** (removes the app only, not Documents\Slate)
+- Audit tool: read-only system and install check
+- Check for updates: against Sam's official GitHub repo
+- Install update: replaces program files only
 
-## Sign in for AI (Claude)
+## Credits
 
-1. Optional: install Claude Code  
-2. Run `claude auth login` in a terminal  
-3. In Slate, set Brain to Claude Code  
+- Slate app: Sam Wasserman - https://github.com/wassermanproductions/slate
+- This Setup helper: Windows install aid only (not by Sam)
 
-## Problems?
+## Log
 
-Log: `%TEMP%\slate-install.log` — safe to re-run Setup anytime.
+`%TEMP%\slate-install.log`
