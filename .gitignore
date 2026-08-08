@@ -14,3 +14,5 @@ dist/SlateSetup-windows-*/
 dist/*.zip
 !dist/package-staging/
 !dist/package-staging/**
+
+frontend/package.json.md5
