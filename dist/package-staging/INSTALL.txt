@@ -1,0 +1,23 @@
+SLATE — QUICK INSTALL (Windows)
+===============================
+
+1. Double-click SlateSetup.exe
+2. If Windows blocks it: More info -> Run anyway
+3. Click Install Slate
+4. Wait for “Finished” (first time can take 10–20 minutes online)
+5. Open Slate from the Start Menu
+
+REQUIREMENTS: Windows 10/11, internet, ~2 GB free space
+
+YOUR PROJECTS stay in:  Documents\Slate
+   Setup never deletes them.
+
+PROBLEMS? Open:  %TEMP%\slate-install.log  and run Setup again.
+
+CREDITS
+  Slate app: created by Sam Wasserman
+    https://github.com/wassermanproductions/slate
+  This installer: community Windows port / fork tooling
+    (not authored by Sam Wasserman)
+
+Full details: README.txt

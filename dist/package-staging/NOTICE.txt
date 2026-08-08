@@ -1,0 +1,36 @@
+Slate — the prompt studio for AI filmmaking
+Copyright 2026 Sam Wasserman
+https://wassermanproductions.com · https://wasserman.ai
+
+The Slate application was created by Sam Wasserman. If you use, fork, or
+redistribute Slate or derivative works, you must retain the upstream NOTICE
+and credit "Sam Wasserman (wassermanproductions.com)" in documentation and
+any about/credits surface, per Section 4(d) of the Apache License 2.0.
+
+---------------------------------------------------------------------------
+Windows Setup package (this download: SlateSetup.exe + docs)
+
+This Windows installer package is community porting / install tooling
+(GitHub: ChrisToast89). It is NOT published by Sam Wasserman and must not
+be represented as an official Wasserman Productions release.
+
+The package maintainer acts only as:
+  • fork curator (ChrisToast89)
+  • Windows install / port tooling contributor
+
+— not as the creator of Slate.
+
+Windows-ready app source used by Setup:
+  https://github.com/ChrisToast89/slate  (branch: windows-support)
+  (fork of https://github.com/wassermanproductions/slate)
+
+What this package does:
+  • Guided GUI setup for Windows
+  • Downloads Slate from the official GitHub repository when run online
+  • Applies community Windows compatibility steps during install
+  • Installs the app per-user; protects Documents\Slate project data
+
+For the original project, support, and attribution of the app itself, see:
+  https://github.com/wassermanproductions/slate
+  https://wassermanproductions.com
+---------------------------------------------------------------------------

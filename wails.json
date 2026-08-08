@@ -1,0 +1,20 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "SlateSetup",
+  "outputfilename": "SlateSetup",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Community Windows port (Slate by Sam Wasserman)",
+    "email": ""
+  },
+  "info": {
+    "companyName": "Community fork tooling — Slate created by Sam Wasserman",
+    "productName": "Slate Setup",
+    "productVersion": "1.1.1",
+    "copyright": "Slate © Sam Wasserman (Apache-2.0). This Setup tool is community Windows porting aid, not an official Wasserman release.",
+    "comments": "Community guided Windows installer for Slate"
+  }
+}
