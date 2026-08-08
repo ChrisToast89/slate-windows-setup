@@ -2,6 +2,30 @@
 
 A **helper installer** so Windows users can run **[Slate](https://github.com/wassermanproductions/slate)** without wrestling with Node, npm, and build steps.
 
+## Download the installer
+
+**[SlateSetup for Windows v1.2.0 (zip)](https://github.com/ChrisToast89/slate-windows-setup/releases/download/v1.2.0/SlateSetup-windows-v1.2.0.zip)**  
+All releases: [github.com/ChrisToast89/slate-windows-setup/releases](https://github.com/ChrisToast89/slate-windows-setup/releases)
+
+### What this package is for
+
+Slate is a **macOS-first** desktop app (Electron). There is no official Windows build from the author. This Setup helper exists so a Windows user can still get **Sam Wasserman’s** Slate onto their PC: it checks the machine, installs missing tools (e.g. Node.js, ffmpeg) when possible, downloads the official source from GitHub, applies a small Windows-only fix for the AI “brain” CLIs, builds the app, and installs it for the current user.
+
+It does **not** replace Slate, rebrand it, or store API keys. It only automates install steps a non-developer would otherwise have to do by hand. **Internet is required** while Setup runs.
+
+### Basic operation
+
+1. Download and unzip the package above.
+2. Double-click **`SlateSetup.exe`**. If Windows SmartScreen appears, choose **More info** → **Run anyway**.
+3. On the home screen, choose **Install Slate** (or use **Audit tool** / **Check for updates** later).
+4. Let it **Check this PC**, then **Continue** → **Install Slate**. First run often takes **10–20 minutes**.
+5. When finished, open **Slate** from the Start Menu.
+
+- App files: `%LOCALAPPDATA%\Programs\Slate`
+- Your projects (never deleted by Setup): `%USERPROFILE%\Documents\Slate`
+
+Optional later: install Claude Code and run `claude auth login` if you want the AI brain features (Slate uses your CLI sign-in, not API keys).
+
 ## Who made what
 
 | | |
