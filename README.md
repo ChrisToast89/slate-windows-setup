@@ -2,6 +2,9 @@
 
 A **helper installer** so Windows users can run **[Slate](https://github.com/wassermanproductions/slate)** without wrestling with Node, npm, and build steps.
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/099e87f2-ba98-458f-8908-1b270a0faa04" />
+
+
 ## Download the installer
 
 **[SlateSetup for Windows v1.2.0 (zip)](https://github.com/ChrisToast89/slate-windows-setup/releases/download/v1.2.0/SlateSetup-windows-v1.2.0.zip)**  
