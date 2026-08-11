@@ -26,15 +26,16 @@ func TestProbeUserNPMTree(t *testing.T) {
 }
 
 func TestIgnoreWailsTree(t *testing.T) {
-	root := `M:\Users\Chris\Documents\_code-projects\slate\slate-windows`
+	// Archived early Wails port (was Slate-win/slate-windows).
+	root := `M:\Users\Chris\Documents\_code-projects\slate\_archive\early-wails-port-NOT-ACTIVE`
 	if !fileExists(filepath.Join(root, "wails.json")) {
-		t.Skip("slate-windows not present")
+		t.Skip("archived early wails port not present")
 	}
 	if _, ok := probeNPMTree(root); ok {
-		t.Fatal("must not treat slate-windows as npm slate")
+		t.Fatal("must not treat archived wails port as npm slate")
 	}
 	if !isIgnoredTree(root) {
-		t.Fatal("slate-windows should be ignored")
+		t.Fatal("archived early wails port should be ignored")
 	}
 }
 

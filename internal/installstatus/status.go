@@ -275,10 +275,17 @@ func probeNPMTree(root string) (Instance, bool) {
 	}, healthy || fileExists(mainJS) || hasSrcMain
 }
 
-// isIgnoredTree skips Wails port and installer itself.
+// isIgnoredTree skips Wails port trees, archives, and the installer itself.
 func isIgnoredTree(root string) bool {
 	base := strings.ToLower(filepath.Base(root))
-	if base == "slate-windows" || base == "slate-installer" {
+	switch base {
+	case "slate-windows", "slate-installer", "win-slate", "_archive",
+		"early-wails-port-not-active":
+		return true
+	}
+	// Any path under workspace _archive/
+	norm := strings.ToLower(filepath.ToSlash(root))
+	if strings.Contains(norm, "/_archive/") || strings.HasSuffix(norm, "/_archive") {
 		return true
 	}
 	// Wails signature

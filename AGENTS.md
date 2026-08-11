@@ -18,7 +18,7 @@ Upstream: https://github.com/wassermanproductions/slate (Apache-2.0, credit Sam 
 | Not this | That lives at |
 |----------|----------------|
 | **Win-Slate** (ported Go+Wails app) | Workspace `Slate-win/Win-Slate/` · GitHub `ChrisToast89/Win-Slate` |
-| Legacy early Wails port tree | Workspace `Slate-win/slate-windows/` |
+| Legacy early Wails port (archived) | Workspace `_archive/early-wails-port-NOT-ACTIVE/` |
 | A reimplementation of the prompt studio UI | That is Win-Slate / upstream |
 
 ## Naming
