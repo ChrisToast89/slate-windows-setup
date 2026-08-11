@@ -1,5 +1,11 @@
 # Slate Setup for Windows
 
+> **Product identity (maintainers / agents)**  
+> This tree is the **installer for Sam’s original Electron/npm Slate** only.  
+> Local folder: `slate-installer`. Published as **slate-windows-setup**.  
+> It is **not** Win-Slate (the Go+Wails port) and **not** `Slate-win/slate-windows` (legacy port).  
+> See [AGENTS.md](./AGENTS.md) and workspace [PRODUCT-MAP.md](../PRODUCT-MAP.md).
+
 A **helper installer** so Windows users can run **[Slate](https://github.com/wassermanproductions/slate)** without wrestling with Node, npm, and build steps.
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/0958ba6f-b6e5-4bb2-a81f-3f0d0f15f087" />

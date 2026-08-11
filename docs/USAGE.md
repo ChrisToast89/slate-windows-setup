@@ -1,6 +1,8 @@
 # Using Slate Setup (Windows)
 
-This program installs **Sam Wasserman's Slate** on Windows. It is a helper only.
+This program installs **Sam Wasserman's Slate** (Electron/npm) on Windows. It is a helper only.
+
+**Not Win-Slate** (the separate Go+Wails port). Product identity: [../AGENTS.md](../AGENTS.md).
 
 ## Install
 
